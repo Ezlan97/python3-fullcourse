@@ -46,3 +46,65 @@ num1 = input("Enter first number:")
 num2 = input("Enter second number:")
 result = float(num1) + float(num2) #convert string to int
 print("Total = " + str(result))
+
+#function
+def sayHi():
+    print("Hello User")
+
+sayHi()
+
+def profile(name, age):
+    print("Hello " + name + " " + age)
+
+profile("Eizlan", "22")
+
+def cube(num):
+    return num*num*num
+
+print(cube(3))
+
+#if else
+isMale = True
+isTall = True
+if isMale or isTall: #true if either true
+    print("You are a male or tall")
+elif isMale and not(isTall):
+    print("You are short male")
+else:
+    print("You are female")
+
+#comparison
+def maxNum(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        print(num1 + " is the largest number!")
+    elif num2 >= num1 and num2 >= num3:
+        print(num2 + " is the largest number")
+    elif num1 == num2 and num2 != num3:
+        print("all the three number is the same number")
+    else:
+        print(num3 + " is the largest number")
+
+maxNum("3","1","2")
+
+#Dictionary
+monthConversion = {
+    "Jan" : "January",
+    "Feb" : "Febuary",
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+    "Aug" : "August",
+    "Sep" : "September",
+    "Oct" : "October",
+    "Dec" : "December",
+}
+
+print(monthConversion.get("Mar"))
+
+#while loop
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
